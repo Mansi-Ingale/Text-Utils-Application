@@ -3,7 +3,8 @@ import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import About from './components/About';
 import React,{ useState } from 'react';
-import Alert from './components/Alert';
+import Alert from './components/Alert'; 
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -53,8 +54,8 @@ function App() {
       <div className="container my-3">
 
       <Routes>
-        <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode}/>} />
-        <Route exact path="/about" element={<About />} />
+        <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Try Textutils - Word Counter, Character Counter, Remove Extra Spaces" mode={mode}/>} />
+        <Route exact path="/about" element={<About mode ={mode} />} />
         {/* <Route path="/contact" element={<Contact />} /> */}
       </Routes>
 
